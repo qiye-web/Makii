@@ -1,0 +1,46 @@
+* {
+    padding: 0;
+    margin: 0;
+}
+
+body {
+    color: #fff;
+    font-size: 14px;
+    font-family: "微软雅黑", sans-serif, inherit;
+    box-sizing: border-box;
+}
+
+ol,
+ul,
+li {
+    list-style: none;
+}
+
+a {
+    color: #fff;
+    text-decoration: none
+}
+
+input,
+button {
+    background: transparent;
+    outline: none;
+    border: none;
+}
+
+
+/* 使用before和after双伪元素清除浮动 */
+
+.clearfix {
+    *zoom: 1;
+}
+
+.clearfix:after,
+.clearfix:before {
+    content: "";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
